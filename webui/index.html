@@ -18,10 +18,12 @@
 </head>
 
 <body>
+    <div id="branding">
+        <h1 class="brand-main">ImperialX</h1>
+        <h2 class="brand-sub">Innovation Imperial AI Agent</h2>
+    </div>
     <div class="container">
         <div id="left-panel" class="panel">
-            <!-- <h2>Configuration</h2> -->
-
             <div class="config-section" id="status-section" x-data="{ connected: true }">
                 <h3>Status</h3>
                 <h4 class="connected" x-show="connected">&#10004; Connected</h4>
@@ -39,8 +41,8 @@
                 <ul class="config-list">
                     <template x-for="context in contexts">
                         <li>
-                            <span 
-                                :class="{'chat-list-button': true, 'font-bold': context.id === selected}" 
+                            <span
+                                :class="{'chat-list-button': true, 'font-bold': context.id === selected}"
                                 @click="selected = context.id; selectChat(context.id)">
                                 Chat #<span x-text="context.no"></span>
                             </span>
@@ -84,7 +86,6 @@
         </div>
         <div class="splitter" id="splitter"></div>
         <div id="right-panel" class="panel">
-            <!--<h2>Chat</h2>-->
             <div id="chat-history">
 
             </div>
@@ -101,3 +102,4 @@
 </body>
 
 </html>
+Last edited just now

@@ -128,7 +128,7 @@ class Agent:
 
         # non-config vars
         self.number = number
-        self.agent_name = f"Agent {self.number}"
+        self.agent_name = f"imperial- {self.number}"
 
         self.history = []
         self.last_message = ""
